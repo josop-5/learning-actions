@@ -9,3 +9,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: deep5050/cppcheck-action@23477d13f5940d7911ae7d533d368033a58a099a
         uses: deep5050/cppcheck-action@v2.0.0
+        with:
+          enabled checks: all
+          enable inconclusive: true
+          generate report: true
