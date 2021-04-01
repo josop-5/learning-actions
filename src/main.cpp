@@ -4,7 +4,7 @@
 void foo(int x)
 {
     int buf[10];
-    if (x == 1000)
+    if (x > 10)
         buf[x] = 0; // <- ERROR
 }
 
