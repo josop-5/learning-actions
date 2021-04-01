@@ -1,0 +1,17 @@
+src/main.cpp:8:12: warning: Either the condition 'x>10' is redundant or the array 'buf[10]' is accessed at index 11, which is out of bounds. [arrayIndexOutOfBoundsCond]
+        buf[x] = 0; // <- ERROR
+           ^
+src/main.cpp:7:11: note: Assuming that condition 'x>10' is not redundant
+    if (x > 10)
+          ^
+src/main.cpp:8:12: note: Array index out of bounds
+        buf[x] = 0; // <- ERROR
+           ^
+src/main.cpp:6:9: style: The scope of the variable 'buf' can be reduced. [variableScope]
+    int buf[10];
+        ^
+src/main.cpp:8:16: style: Variable 'buf[x]' is assigned a value that is never used. [unreadVariable]
+        buf[x] = 0; // <- ERROR
+               ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
