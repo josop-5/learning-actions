@@ -12,8 +12,11 @@ int main (){
     std::string text = "ahoj";
     std::cout << text << std::endl;
 
-
-    foo(4);
+    for (size_t i = 0; i < 200; ++i)
+    {
+        foo(i);
+    }
+    
 
     return 0;
 }
